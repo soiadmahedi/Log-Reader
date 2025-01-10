@@ -1,0 +1,87 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/cardview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="15dp"
+		android:orientation="vertical"
+		android:layout_gravity="right"
+		app:cardElevation="0dp"
+		app:cardCornerRadius="10dp"
+		app:strokeColor="#000000"
+		app:strokeWidth="1dp">
+		<LinearLayout
+			android:id="@+id/linear_bg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear_type"
+				android:layout_width="28dp"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview_log_type"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="A"
+					android:textSize="20sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear_log_body"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview_log_header"
+					android:focusable="false"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="TextView"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview_log_date"
+					android:focusable="false"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="TextView"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview_log_body"
+					android:focusable="false"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:text="TextView"
+					android:textSize="12sp"
+					android:textColor="#616161" />
+				<TextView
+					android:id="@+id/textview_log_package"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:text="TextView"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</LinearLayout>
+	</com.google.android.material.card.MaterialCardView>
+</LinearLayout>
